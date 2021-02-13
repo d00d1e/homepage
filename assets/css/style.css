@@ -43,6 +43,12 @@ hr {
   height: auto;
 }
 
+.mission {
+  /* border-bottom: 1px solid black; */
+  color: white;
+  background-color: black;
+}
+
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
