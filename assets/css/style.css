@@ -1,4 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  overscroll-behavior-y: none;
+}
+
+hr {
   background-color: white;
 }
 
@@ -6,14 +14,19 @@ body {
   background-color: #eee;
 }
 
-#intro {
+#banner {
   width: 100%;
   height: 500px;
-  background: url("../img/nigiri.jpg") no-repeat center center fixed;  
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../img/nigiri.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  box-shadow: 10px 1px 1px #000;
 }
 
 .nopadding {
@@ -21,14 +34,21 @@ body {
   margin: 0 !important;
 }
 
-#book {
-  width: 100%;
+#booking {
+  min-width: 100%;
   height: 500px;
-  background: url("../img/omakase.png") no-repeat center center fixed;  
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/omakase.png") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.logo-main {
+  /* width: 45rem; */
+  max-width: 100%;
+  height: auto;
 }
 
 /* Media query */
