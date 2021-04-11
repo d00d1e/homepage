@@ -7,8 +7,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-padding-top: 5.5rem;
+  overscroll-behavior: none;
 }
 
 body {
@@ -16,7 +22,6 @@ body {
   background-color: white;
   width: 100%;
   height: 100%;
-  overscroll-behavior: none;
 }
 
 /* UTILITY */
@@ -43,7 +48,7 @@ hr {
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.2)
     ),
-    url("../img/nigiri.jpg") no-repeat top center fixed;
+    url("../img/nigiri.jpg") no-repeat fixed top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -71,6 +76,8 @@ hr {
 }
 
 .mission {
+  display: block;
+  width: 100%;
   color: white;
   background-color: black;
 }
@@ -84,7 +91,7 @@ hr {
   min-width: 100%;
   height: 60vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/omakase.png") no-repeat center center fixed;
+    url("../img/omakase.png") no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -94,6 +101,7 @@ hr {
 
 /* FOOTER */
 footer {
+  display: block;
   width: 100%;
   height: 100%;
   background-color: black;
